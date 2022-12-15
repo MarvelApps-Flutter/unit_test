@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:loginunittest/constant/constant_view.dart';
+import 'package:loginunittest/constant/constant_value.dart';
 import 'package:loginunittest/view/home_view.dart';
 import 'package:loginunittest/view/signup.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import '../constant/email_validation.dart';
-import '../constant/password_validation.dart';
+import '../widgets/common_widget.dart';
+import '../helper/email_validation.dart';
+import '../helper/password_validation.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -25,7 +26,7 @@ class _LoginViewState extends State<LoginView> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(ConstantView.LOGIN_BUTTON),
+        title: Text(ConstantValue.LOGIN_BUTTON),
         centerTitle: true,
       ),
       body: SizedBox(
@@ -78,7 +79,7 @@ class _LoginViewState extends State<LoginView> {
                         });
                       }
                     },
-                    child: Text(ConstantView.LOGIN_BUTTON)),
+                    child: Text(ConstantValue.LOGIN_BUTTON)),
                 const SizedBox(
                   height: 20,
                 ),

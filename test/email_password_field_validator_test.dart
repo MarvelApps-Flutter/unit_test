@@ -1,11 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:loginunittest/constant/email_validation.dart';
-import 'package:loginunittest/constant/password_validation.dart';
+import 'package:loginunittest/constant/constant_value.dart';
+import 'package:loginunittest/helper/email_validation.dart';
+import 'package:loginunittest/helper/password_validation.dart';
 
 void main() {
   test('empty email returns error string', () {
     final result = EmailFieldValidator.validate('');
-    expect(result, 'Email can\'t be empty');
+    expect(result, ConstantValue.EMAIL_EMPTY);
   });
 
   test('non-empty email returns null', () {
@@ -13,9 +14,9 @@ void main() {
     expect(result, null);
   });
 
-  test('empty password returns error string', () {
+  test('empty password returns error strings', () {
     final result = PasswordFieldValidator.validate('');
-    expect(result, 'Password can\'t be empty');
+    expect(result, ConstantValue.PASSWORD_EMPTY);
   });
 
   test('non-empty password returns null', () {

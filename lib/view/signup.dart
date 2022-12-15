@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:loginunittest/view/login_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../constant/constant_view.dart';
-import '../constant/email_validation.dart';
-import '../constant/password_validation.dart';
+import '../widgets/common_widget.dart';
+import '../constant/constant_value.dart';
+import '../helper/email_validation.dart';
+import '../helper/password_validation.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -26,7 +27,7 @@ class _SignupState extends State<Signup> {
           leading: GestureDetector(
               onTap: (() => Navigator.pop(context)),
               child: const Icon(Icons.arrow_back_ios)),
-          title: Text(ConstantView.SIGNUP_BUTTON),
+          title: Text(ConstantValue.SIGNUP_BUTTON),
           centerTitle: true,
         ),
         body: Center(
@@ -68,7 +69,7 @@ class _SignupState extends State<Signup> {
                                   builder: ((context) => const LoginView())));
                         }
                       },
-                      child: Text(ConstantView.SIGNUP_BUTTON)),
+                      child: Text(ConstantValue.SIGNUP_BUTTON)),
                 ],
               ),
             ),
