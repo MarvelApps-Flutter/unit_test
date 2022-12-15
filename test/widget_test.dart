@@ -11,12 +11,12 @@ import 'package:loginunittest/view/login_view.dart';
 
 import 'package:loginunittest/main.dart';
 
-void main() {
-  testWidgets('Button is present and triggers navigation after tapped',
-      (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: LoginView()));
-    expect(find.byType(ElevatedButton), findsOneWidget);
-    await tester.tap(find.byType(ElevatedButton));
-    //how to test navigator?
-  });
-}
+// void main() {
+//   testWidgets('Button is present and triggers navigation after tapped',
+//       (WidgetTester tester) async {
+//     await tester.pumpWidget(const MaterialApp(home: LoginView()));
+//     expect(find.byType(ElevatedButton), findsOneWidget);
+//     await tester.tap(find.byType(ElevatedButton));
+//     //how to test navigator?
+//   });
+// }
