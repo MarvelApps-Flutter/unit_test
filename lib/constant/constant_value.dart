@@ -7,4 +7,7 @@ class ConstantValue {
   static String WELCOME = "Welcome";
   static String PASSWORD_EMPTY = "Password can't be empty";
   static String EMAIL_EMPTY = "Email can't be empty";
+
+  static String IMAGE_PATH = "assets/images/successive.png";
+  static String SPLASH_TEXT = "Flutter \nUnit Test";
 }
