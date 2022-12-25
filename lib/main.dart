@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginunittest/view/login_view.dart';
-import 'package:loginunittest/widgets/splash_page.dart';
+import 'package:loginunittest/view/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
