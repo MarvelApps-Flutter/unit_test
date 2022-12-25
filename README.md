@@ -1,5 +1,9 @@
 # Unit Test
 
+1. Create the test folder and create file with validation.dart name
+2. set unit test on method or class like validation
+3. run command flutter test
+
     
 
 # Screenshots
